@@ -35,8 +35,16 @@ remember that you can build list using the (:) operator (pronounced "cons"):
 
 -------------------------------------------------------------------------------}
 
-collatz n = undefined
+collatz :: Integer -> [Integer]
+collatz = undefined
              -- Replace this with your function that builds the Collatz sequence
+
+-- >>> collatz 2             
+
+-- >>> collatz 3
+
+-- prop> \n -> n < 1 || last (collatz n) == 1
+
 
 tests = and [ collatz 2 == [2, 1]
             , collatz 3 == [3, 10, 5, 16, 8, 4, 2, 1]
