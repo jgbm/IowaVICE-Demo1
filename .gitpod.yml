@@ -5,3 +5,4 @@ vscode:
   extensions:
     - haskell.haskell
     - justusadam.language-haskell
+    - james-yu.latex-workshop
