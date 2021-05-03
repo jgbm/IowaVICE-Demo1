@@ -6,6 +6,8 @@ RUN add-apt-repository -y ppa:hvr/ghc && \
     apt update && \
     apt install -y ghc-8.10.4 cabal-install-3.4
 
+RUN apt install -y texlive-full
+
 USER gitpod
 
 ENV PATH="/opt/ghc/bin:$PATH"
